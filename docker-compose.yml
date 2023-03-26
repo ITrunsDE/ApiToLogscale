@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  apispark:
+    build:
+      context: .
+    volumes:
+      - ./src:/src
+      - ./logs:/logs
+    command: python main.py
