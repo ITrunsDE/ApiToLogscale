@@ -14,6 +14,13 @@ git clone ITrunsDE/ApiToLogscale
 make build
 ```
 
+Or if you don't have docker-compose installed. You have to run the following commands to build and run your Docker.
+
+```bash
+docker build . -t ApiToLogscale:latest
+docker run -v $(pwd)/src:/src -v $(pwd)/logs:/logs -v $(pwd)/config.yaml:/src/config.yaml ApiToLogscale
+```
+
 ## Basic configuration
 
 Before you start your container, you should configure your **config.yaml**. 
