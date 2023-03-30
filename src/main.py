@@ -52,8 +52,13 @@ def send_to_logscale(
 
 
 def load_config() -> dict:
+    logging.debug('Loading config.yaml')
+    
     if not os.path.exists('config.yaml'):
-        raise Exception('Config file not found')
+        logging.error('config.yaml file not found')
+        raise Exception('config.yaml file not found')
+
+    logging.debug('Reading config.yaml')
 
     # read config file
     with(open('config.yaml', 'r') as fp):
