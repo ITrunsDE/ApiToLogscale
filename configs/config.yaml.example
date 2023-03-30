@@ -7,7 +7,7 @@ repository:
 api:
   api_call_1:
     name: "Your API identifier"
-    url: "https://api12.test.com/apiv1/get_data.php?test=1"
+    url: "https://httpbin.org/json"
     to_repository: your_repo_name # must match the name of the repo
     interval:
       min: 1
