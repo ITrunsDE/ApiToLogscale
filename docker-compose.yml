@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  ApiToLogscale:
+  apitologscale:
     build:
       context: .
     volumes:
