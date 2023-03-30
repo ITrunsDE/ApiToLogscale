@@ -18,12 +18,16 @@ Or if you don't have docker-compose installed. You have to run the following com
 
 ```bash
 docker build . -t ApiToLogscale:latest
-docker run -v $(pwd)/src:/src -v $(pwd)/logs:/logs -v $(pwd)/config.yaml:/src/config.yaml ApiToLogscale
+docker run -v $(pwd)/src:/src -v $(pwd)/logs:/logs -v $(pwd)/configs/config.yaml:/src/config.yaml ApiToLogscale
 ```
 
 ## Basic configuration
 
-Before you start your container, you should configure your **config.yaml**. 
+Before you start your container, you should configure your **config.yaml**. Copy the config.yaml.example to config.yaml and edit it
+
+```bash
+cp configs/config.yaml.example configs/config.yaml
+```
 
 ```yaml
 logscale_url: "https://cloud.community.humio.com" # or https://cloud.humio.com
