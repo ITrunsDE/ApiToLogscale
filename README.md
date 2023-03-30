@@ -5,6 +5,8 @@ You have an API that provides data for your Logscale repository. At the moment y
 
 Why not using a Docker container that runs the code in that interval that you specified and gets the data from the API and sends it to your Logscale repository.
 
+![Check logs with ingest in LogScale](/images/Logscale_Ingest.gif)
+
 ## Installation
 
 The installation is quite simple. Just clone the repository and run the make command, to build the docker container.
