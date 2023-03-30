@@ -7,5 +7,5 @@ services:
     volumes:
       - ./src:/src
       - ./logs:/logs
-      - ./config.yaml:/src/config.yaml
+      - ./configs/config.yaml:/src/config.yaml
     command: python main.py

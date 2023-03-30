@@ -1,3 +1,4 @@
 .vscode/settings.json
 logs/
 src/config.yaml
+configs/config.yaml
